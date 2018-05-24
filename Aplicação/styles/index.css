@@ -1,6 +1,13 @@
-html {
-  background: url(../img/rawpixel-558596-unsplash.jpg) no-repeat center center fixed;
+html body {
+  background: url('../img/rawpixel-558596-unsplash.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
+
+}
+
+#titulo {
+    background-color: black;
+    margin-top:10%;
+    color: white;
 }
