@@ -14,10 +14,11 @@
             <div class="ui segment">
             
                 <img class="ui centered medium image" src="img/company_logoPNG.png">
-                
-                <div class="ui center aligned sub header">Qual o mês de Referência do Indicador?</div>
-                    <select name="skills" class="ui fluid search dropdown">
-                      <option value="">Mês</option>
+               
+             
+                <div class="ui center aligned sub header">Qual o mês de Referência dos Indicadores?</div>
+                    <select name="skills" class="ui fluid  dropdown" >
+                      <option value="" style="margin-top:5%;">Mês</option> 
                     <option value="Janeiro">Janeiro</option>
                     <option value="Fevereiro">Fevereiro</option>
                     <option value="Março">Março</option>
@@ -31,13 +32,27 @@
                     <option value="Novembro">Novembro</option>
                     <option value="Dezembro">Dezembro</option>
                     </select>
+                    
+                    
+                    <button class="positive ui button" style="margin-top:5%; margin-left:45%;">Comece aqui!</button>
+                    
+                    
+                      <img id="bordao" class="ui centered huge rounded image" src="img/indicadores_1.jpg">
+                    
+                    </div>
                                 
-            </div>
+                                
+                  
+       
         </div>
-        
         
         
     <script src="./scripts/JQuery.js"></script>
     <script src="./scripts/semantic-ui.js"></script>
+    <script>
+    $('.ui.dropdown')
+  .dropdown()
+;
+    </script>
 </body>
 </html>
