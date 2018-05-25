@@ -10,8 +10,12 @@ $("#mes").html(localStorage.mes);
 
 $("#processoButton").click(function(){
     
-    var indicadoresProcessos =  $(".indicador1").html().toArray();
-    var resultadosProcessos =  $(".resultado1").html().toArray(); 
+    var indicadoresProcessos =  $( ".indicador1" ).map(function() {
+    return $( this ).val();
+    });
+    var resultadosProcessos =  $(".resultado1").map(function() {
+    return $( this ).val();
+  });
     
     console.log(indicadoresProcessos);
     console.log(resultadosProcessos);
@@ -20,8 +24,12 @@ $("#processoButton").click(function(){
 
 $("#setorialButton").click(function(){
     
-    var indicadoresSetorial =  $(".indicador2").html().toArray();
-    var resultadosSetorial =  $(".resultado2").html().toArray(); 
+    var indicadoresSetorial =  $(".indicador2").map(function() {
+    return $( this ).val();
+    });
+    var resultadosSetorial =  $(".resultado2").map(function() {
+    return $( this ).val();
+    });
     
        console.log(indicadoresSetorial);
     console.log(resultadosSetorial);
@@ -30,8 +38,12 @@ $("#setorialButton").click(function(){
 
 $("#estrategicosButton").click(function(){
     
-    var indicadoresEstrategicos =  $(".indicador3").html().toArray();
-    var resultadosEstrategicos =  $(".resultado3").toArray(); 
+    var indicadoresEstrategicos =  $(".indicador3").map(function() {
+    return $( this ).val();
+      });
+    var resultadosEstrategicos =  $(".resultado3").map(function() {
+    return $( this ).val();
+    });
     
      console.log(indicadoresEstrategicos);
     console.log(resultadosEstrategicos);
