@@ -8,22 +8,31 @@ $("#mes").html(localStorage.mes);
 
 <!--Clique no botão de Processos-->
 
-$("#processosButton").click(function(){
+$("#processoButton").click(function(){
     
-    var indicadoresProcessos =  $(".indicador1").toArray();
-    var resultadosProcessos =  $(".resultado1").toArray(); 
+    var indicadoresProcessos =  $(".indicador1").html().toArray();
+    var resultadosProcessos =  $(".resultado1").html().toArray(); 
+    
+    console.log(indicadoresProcessos);
+    console.log(resultadosProcessos);
 });
 
 
 $("#setorialButton").click(function(){
     
-    var indicadoresSetorial =  $(".indicador2").toArray();
-    var resultadosSetorial =  $(".resultado2").toArray(); 
+    var indicadoresSetorial =  $(".indicador2").html().toArray();
+    var resultadosSetorial =  $(".resultado2").html().toArray(); 
+    
+       console.log(indicadoresSetorial);
+    console.log(resultadosSetorial);
 });
 
 
 $("#estrategicosButton").click(function(){
     
-    var indicadoresEstrategicos =  $(".indicador3").toArray();
+    var indicadoresEstrategicos =  $(".indicador3").html().toArray();
     var resultadosEstrategicos =  $(".resultado3").toArray(); 
+    
+     console.log(indicadoresEstrategicos);
+    console.log(resultadosEstrategicos);
 });
