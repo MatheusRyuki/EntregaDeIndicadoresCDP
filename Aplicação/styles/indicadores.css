@@ -6,3 +6,14 @@ html body {
   overflow: hidden;
 
 }
+
+#titulo {
+    background-color: black;
+    margin-top:10%;
+    color: white;
+}
+
+
+#bordao {
+    margin-top:10%;
+}
