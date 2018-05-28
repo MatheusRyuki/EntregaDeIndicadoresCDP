@@ -147,34 +147,19 @@ $("#estrategicosButton").click(function(){
 
 
 $("#confirmar").click(function(){
-    
-    <div class="ui basic modal">
-  <div class="ui icon header">
-   <i class="print icon"></i>
-    Finalizar o Preenchimento dos Indicadores
-  </div>
-  <div class="content">
-    <p>Você tem certeza que quer finalizar?</p>
-  </div>
-  <div class="actions">
-    <div class="ui red basic cancel inverted button">
-      <i class="remove icon"></i>
-      No
-    </div>
-    <div class="ui green ok inverted button">
-      <i class="checkmark icon"></i>
-      Yes
-    </div>
-  </div>
-</div>
-    
-    
+    $('.ui.basic.modal')
+  .modal('show')
+;    
+});
+
+$("#escrever").click(function(){
+    $('.ui.basic.modal')
+  .modal('show')
+;    
 });
 
 
-$('.ui.basic.modal')
-  .modal('show')
-;
+
 
 });
 
