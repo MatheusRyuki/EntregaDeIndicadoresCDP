@@ -153,7 +153,7 @@ $("#confirmar").click(function(){
 });
 
 $("#escrever").click(function(){
-    $('.ui.basic.modal')
+    $('#final')
   .modal('show')
 ;    
 });
