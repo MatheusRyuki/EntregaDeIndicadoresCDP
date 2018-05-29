@@ -168,6 +168,17 @@ $("#escrever").click(function(){
 ;    
 });
 
+$("#gerarpdf").click(function(){
+    localStorage.avaliacao =  $("#avaliacao").val();
+    localStorage.avaliacao =  $("#planos").val();
+    
+    var doc = new jsPDF();
+       doc.text(20, 20,'Área: ');
+    doc.text(20, 30, localStorage.area);
+    doc.text(30, 20,'Mês: ');
+      doc.text(30, 30, localStorage.mes);
+      doc.save('Relatório.pdf');
+});
 
 
 
