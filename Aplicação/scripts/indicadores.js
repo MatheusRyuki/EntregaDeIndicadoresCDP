@@ -191,7 +191,7 @@ doc.text(105, 50, 'Relatório dos Indicadores', null, null, 'center');
       doc.text('Avaliação Gerencial: ' + localStorage.avaliacao, 20, 90);
  
       
-       doc.text('Planos de Ação: ' + localStorage.planos, 20, 130);
+       doc.text('Planos de Ação: ' + localStorage.planos, 20, 150);
         
         doc.addPage();
         
@@ -225,7 +225,7 @@ doc.text(105, 50, 'Relatório dos Indicadores', null, null, 'center');
         
           for (var i = 0; i<indSeto.length; i++) {
               doc.text(indSeto[i] + ': \n' + resulSeto[i], 20, y);
-              y += 10;
+              y += 15;
         }
         
          //Espaçamento
@@ -239,7 +239,7 @@ doc.text(105, 50, 'Relatório dos Indicadores', null, null, 'center');
         
           for (var i = 0; i<indPro.length; i++) {
               doc.text(indPro[i] + ': \n' + resulPro[i], 20, y);
-              y += 10;
+              y += 15;
         }
     }
 
