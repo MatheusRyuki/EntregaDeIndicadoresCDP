@@ -113,7 +113,12 @@ $("#mes").html(localStorage.mes);
 //Clique no botão de Processos
 
 $("#processoButton").click(function(){
-    
+     //Aviso que Salvou
+      $(this).popup({
+           title: 'Salvo!',
+            on:'click'
+      }).popup('show');
+       
     var indicadoresProcessos =  $( ".indicador1" ).map(function() {
     return $( this ).val();
     });
@@ -131,7 +136,12 @@ $("#processoButton").click(function(){
 //Clique no botão de Setorial
 
 $("#setorialButton").click(function(){
-    
+     //Aviso que Salvou
+    $(this).popup({
+           title: 'Salvo!',
+            on:'click'
+      }).popup('show');
+      
     var indicadoresSetorial =  $(".indicador2").map(function() {
     return $( this ).val();
     });
@@ -150,6 +160,12 @@ $("#setorialButton").click(function(){
 //Clique no botão de Estratégicos
 
 $("#estrategicosButton").click(function(){
+    //Aviso que Salvou
+    $(this).popup({
+           title: 'Salvo!',
+            on:'click'
+      }).popup('show');
+      
     
     var indicadoresEstrategicos =  $(".indicador3").map(function() {
     return $( this ).val();
