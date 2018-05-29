@@ -150,7 +150,7 @@ $("#estrategicosButton").click(function(){
     
     
      console.log( localStorage.indicadoresEstrategicos);
-    console.log(resultadosEstrategicos);
+    console.log(localStorage.resultadosEstrategicos);
 });
 
 //Clique no Botão Finalizar
@@ -184,8 +184,68 @@ doc.text(105, 50, 'Relatório dos Indicadores', null, null, 'center');
  doc.setFontType("normal");
        doc.text('Área: ', 20, 70);
     doc.text(localStorage.area, 35, 70);
+    
     doc.text('Mês: ', 20, 80);
       doc.text(localStorage.mes, 35, 80);
+      
+      doc.text('Avaliação Gerencial: ' + localStorage.avaliacao, 20, 90);
+ 
+      
+       doc.text('Planos de Ação: ' + localStorage.planos, 20, 130);
+        
+        doc.addPage();
+        
+           doc.setFontType("bold");
+        doc.text(105, 10, 'Resultados', null, null, 'center');
+        doc.setFontType("normal");
+        
+       //Notação dos indicadores
+        
+        var y = 30;
+        
+        if (localStorage.getItem("indicadoresEstrategicos") !== null) {
+        //Estratégicos
+        var indEstra =  JSON.parse(localStorage.indicadoresEstrategicos);
+        var resulEstra = JSON.parse(localStorage.resultadosEstrategicos);
+        
+        for (var i = 0; i<indEstra.length; i++) {
+              doc.text(indEstra[i] + ': \n' + resulEstra[i], 20, y);
+              y += 15;
+        }
+        
+        //Espaçamento
+            y += 15;
+        
+    }
+        
+       if (localStorage.getItem("indicadoresSetorial") !== null) {
+        //Setorial
+        var indSeto=  JSON.parse(localStorage.indicadoresSetorial);
+        var resulSeto = JSON.parse(localStorage.resultadosSetorial);
+        
+          for (var i = 0; i<indSeto.length; i++) {
+              doc.text(indSeto[i] + ': \n' + resulSeto[i], 20, y);
+              y += 10;
+        }
+        
+         //Espaçamento
+            y += 15;
+        }
+        
+          if (localStorage.getItem("indicadoresProcessos") !== null) {
+          //Processos
+        var indPro=  JSON.parse(localStorage.indicadoresProcessos);
+        var resulPro = JSON.parse(localStorage.resultadosProcessos);
+        
+          for (var i = 0; i<indPro.length; i++) {
+              doc.text(indPro[i] + ': \n' + resulPro[i], 20, y);
+              y += 10;
+        }
+    }
+
+        
+  
+        
       doc.save('Relatório.pdf');
 });
 
