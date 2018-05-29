@@ -211,6 +211,7 @@ doc.text(105, 50, 'Relatório dos Indicadores', null, null, 'center');
            doc.setFontType("bold");
         doc.text(105, 10, 'Resultados', null, null, 'center');
         doc.setFontType("normal");
+        doc.setFontSize(12);
         
        //Notação dos indicadores
         
