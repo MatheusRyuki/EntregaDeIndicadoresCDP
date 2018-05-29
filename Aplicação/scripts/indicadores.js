@@ -108,8 +108,11 @@ $("#processoButton").click(function(){
     return $( this ).val();
   });
     
-    console.log(indicadoresProcessos);
-    console.log(resultadosProcessos);
+     localStorage.indicadoresProcessos = JSON.stringify(indicadoresProcessos);
+    localStorage.resultadosProcessos = JSON.stringify(resultadosProcessos);
+    
+    console.log( localStorage.indicadoresProcessos);
+    console.log(localStorage.resultadosProcessos);
 });
 
 //Clique no botão de Setorial
@@ -123,8 +126,11 @@ $("#setorialButton").click(function(){
     return $( this ).val();
     });
     
-       console.log(indicadoresSetorial);
-    console.log(resultadosSetorial);
+     localStorage.indicadoresSetorial = JSON.stringify(indicadoresSetorial);
+    localStorage.resultadosSetorial = JSON.stringify(resultadosSetorial);
+    
+       console.log( localStorage.indicadoresSetorial);
+    console.log( localStorage.resultadosSetorial);
 });
 
 
@@ -139,7 +145,11 @@ $("#estrategicosButton").click(function(){
     return $( this ).val();
     });
     
-     console.log(indicadoresEstrategicos);
+    localStorage.indicadoresEstrategicos = JSON.stringify(indicadoresEstrategicos);
+    localStorage.resultadosEstrategicos = JSON.stringify(resultadosEstrategicos);
+    
+    
+     console.log( localStorage.indicadoresEstrategicos);
     console.log(resultadosEstrategicos);
 });
 
