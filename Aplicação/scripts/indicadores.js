@@ -218,12 +218,45 @@ doc.text(105, 50, 'Relatório dos Indicadores', null, null, 'center');
       doc.text(localStorage.mes, 35, 80);
       
       //Criar nova Linha caso o texto passe a linha
-      var splitTexto = doc.splitTextToSize(localStorage.avaliacao, 180);
-      doc.text('Avaliação Gerencial: ' + splitTexto, 20, 90);
- 
-        var splitTexto2 = doc.splitTextToSize(localStorage.planos, 180);
-       doc.text('Planos de Ação: ' + splitTexto2, 20, 150);
+      doc.setFontSize(12);
+      
+      var splitTexto = doc.splitTextToSize(localStorage.avaliacao, 140);
+      
+    
+      y=90;
+        doc.text('Avaliação Gerencial: ' + splitTexto[0], 20, y);
+       
+       
+       y += 8;
+         //Digitar em cada linha um texto
+         
+       for(var c = 1;c<splitTexto.length;c++){
+
+        doc.text(splitTexto[c], 20,y);
+        y += 8;
+
+        }
+   
+        console.log(splitTexto);
+
         
+        var splitTexto2 = doc.splitTextToSize(localStorage.planos, 140);
+        
+    
+          
+        //digitar em uma linha cada texto
+       doc.text('Planos de Ação: ' + splitTexto2[0], 20, y);
+    y += 8;
+             
+        for(var c = 1;c<splitTexto2.length;c++){
+
+        doc.text(splitTexto2[c], 20,y);
+        y += 8;
+
+        }
+          console.log(splitTexto2);
+        
+        doc.setFontSize(20);
         doc.addPage();
         
            doc.setFontType("bold");
