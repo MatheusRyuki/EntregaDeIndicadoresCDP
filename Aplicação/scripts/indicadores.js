@@ -217,10 +217,12 @@ doc.text(105, 50, 'Relatório dos Indicadores', null, null, 'center');
     doc.text('Mês: ', 20, 80);
       doc.text(localStorage.mes, 35, 80);
       
-      doc.text('Avaliação Gerencial: ' + localStorage.avaliacao, 20, 90);
+      //Criar nova Linha caso o texto passe a linha
+      var splitTexto = doc.splitTextToSize(localStorage.avaliacao, 180);
+      doc.text('Avaliação Gerencial: ' + splitTexto, 20, 90);
  
-      
-       doc.text('Planos de Ação: ' + localStorage.planos, 20, 150);
+        var splitTexto2 = doc.splitTextToSize(localStorage.planos, 180);
+       doc.text('Planos de Ação: ' + splitTexto2, 20, 150);
         
         doc.addPage();
         
