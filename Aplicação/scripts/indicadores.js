@@ -103,7 +103,11 @@ $("#mes").html(localStorage.mes);
          else if (localStorage.area == 'GEAUDI') {
          $("#estrategicos").html('<div class="ui info message"><div class="header">Sem Indicadores</div><ul class="list"><li>Não há indicadores desse cenário para essa área.</li></ul></div>');
             $("#setorial").html('<div class="ui info message"><div class="header">Sem Indicadores</div><ul class="list"><li>Não há indicadores desse cenário para essa área.</li></ul></div>');
-}
+            $("#processos").html(
+            '<div class="two fields"><div class="field"><!--Área de Inserimento dos dados--><div class="ui labeled input"><div class="ui label">Indicador</div><input readonly="" type="text" value="Cumprimento do Plano Anual de Auditoria - PAINT" class="indicador1"></div></div> <div class="field"><!--Área de Inserimento dos dados--><div class="ui labeled input"> <div class="ui label"> Resultado do Indicador </div><input type="text" placeholder="Resultado" class="resultado1"> </div></div> </div>'
++ '<div class="two fields"><div class="field"><!--Área de Inserimento dos dados--><div class="ui labeled input"><div class="ui label">Indicador</div><input readonly="" type="text" value="Pontos de Auditoria Sanados" class="indicador1"></div></div> <div class="field"><!--Área de Inserimento dos dados--><div class="ui labeled input"> <div class="ui label"> Resultado do Indicador </div><input type="text" placeholder="Resultado" class="resultado1"> </div></div> </div>'
++ '<button class="ui primary button" id="processoButton" > Salvar</button>');    
+            }
 
 
 
