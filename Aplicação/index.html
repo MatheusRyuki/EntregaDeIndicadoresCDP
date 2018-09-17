@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
+
 <head>
- <link rel="stylesheet" type="text/css" href="./styles/semanticUi.css">
-  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/semanticUi.css">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
     <title>Página Principal</title>
 </head>
+
 <body>
-        <div class="ui container">
-        
-            <h1 class="ui center aligned header" id="titulo"> Indicadores CDP</h1> 
-            
-            <div class="ui segment">
-            
-                <img class="ui centered medium image" src="img/company_logoPNG.png">
-               
-              <!--Primeiro Seletor - Mês-->
-              
-                <div class="ui center aligned sub header">Qual o mês de Referência dos Indicadores?</div>
-                    <select id="mes" class="ui fluid  dropdown" >
-                      <option value="" style="margin-top:5%;">Mês</option> 
-                    <option value="Janeiro">Janeiro</option>
-                    <option value="Fevereiro">Fevereiro</option>
-                    <option value="Março">Março</option>
-                    <option value="Abril">Abril</option>
-                    <option value="Maio">Maio</option>
-                    <option value="Junho">Junho</option>
-                    <option value="Julho">Julho</option>
-                    <option value="Agosto">Agosto</option>
-                    <option value="Setembro">Setembro</option>
-                    <option value="Outubro">Outubro</option>
-                    <option value="Novembro">Novembro</option>
-                    <option value="Dezembro">Dezembro</option>
-                    </select>
-                    
-                         <!--Segundo Seletor - Área-->
-                    
-                       <div class="ui center aligned sub header">Qual é a Área de Referência dos Indicadores?</div>
-                    <select id="area" class="ui fluid  dropdown" >
-                      <option value="" style="margin-top:5%;">Área</option> 
-                    <option value="ASGEP">ASGEP</option>
-                    <option value="ASSCOM">ASSCOM</option>
-                    <option value="Comissão de Ética">Comissão de Ética</option>
-                    <option value="Comissão Operador Portuário">Comissão Operador Portuário</option>
-                    <option value="GEADMI">GEADMI</option>
-                    <option value="GEAUDI">GEAUDI</option>
-                    <option value="GEENGE">GEENGE</option>
-                    <option value="GEFINS">GEFINS</option>
-                    <option value="GEGABI">GEGABI</option>
-                    <option value="GEJURI">GEJURI</option>
-                    <option value="GEPLAM">GEPLAM</option>
-                    <option value="GERCOC">GERCOC</option>
-                    <option value="GERHUM">GERHUM</option>
-                    <option value="GERPMA">GERPMA</option>
-                    <option value="GETINF">GETINF</option>
-                    <option value="Ouvidoria">Ouvidoria</option>
-                    <option value="SIC">SIC</option> 
-                    <option value="SUCOFA">SUCOFA</option>    
-                    </select>
-                    
-                    
-                    
-                    <button id="inicio" class="positive ui button" style="margin-top:5%; margin-left:45%;">Comece aqui!</button>
-                    
-                    
-                      <img id="bordao" class="ui centered huge rounded image" src="img/indicadores_1.jpg">
-                    
-                    </div>
-                                
-                                
-                  
-       
+    <div class="ui container">
+
+        <h1 class="ui center aligned header" id="titulo"> Indicadores CDP</h1>
+
+        <div class="ui segment">
+
+            <img class="ui centered medium image" src="img/company_logoPNG.png">
+
+            <!--Primeiro Seletor - Mês-->
+
+            <div class="ui center aligned sub header">Qual o mês de Referência dos Indicadores?</div>
+            <select id="mes" class="ui fluid  dropdown">
+                <option value="" style="margin-top:5%;">Mês</option>
+                <option value="Janeiro">Janeiro</option>
+                <option value="Fevereiro">Fevereiro</option>
+                <option value="Março">Março</option>
+                <option value="Abril">Abril</option>
+                <option value="Maio">Maio</option>
+                <option value="Junho">Junho</option>
+                <option value="Julho">Julho</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Setembro">Setembro</option>
+                <option value="Outubro">Outubro</option>
+                <option value="Novembro">Novembro</option>
+                <option value="Dezembro">Dezembro</option>
+            </select>
+
+            <!--Segundo Seletor - Área-->
+
+            <div class="ui center aligned sub header">Qual é a Área de Referência dos Indicadores?</div>
+            <select id="area" class="ui fluid  dropdown">
+                <option value="" style="margin-top:5%;">Área</option>
+                <option value="ASGEP">ASGEP</option>
+                <option value="ASSCOM">ASSCOM</option>
+                <option value="Comissão de Ética">Comissão de Ética</option>
+                <option value="Comissão Operador Portuário">Comissão Operador Portuário</option>
+                <option value="GEADMI">GEADMI</option>
+                <option value="GEAUDI">GEAUDI</option>
+                <option value="GEENGE">GEENGE</option>
+                <option value="GEFINS">GEFINS</option>
+                <option value="GEGABI">GEGABI</option>
+                <option value="GEJURI">GEJURI</option>
+                <option value="GEPLAM">GEPLAM</option>
+                <option value="GERCOC">GERCOC</option>
+                <option value="GERHUM">GERHUM</option>
+                <option value="GERPMA">GERPMA</option>
+                <option value="GETINF">GETINF</option>
+                <option value="Ouvidoria">Ouvidoria</option>
+                <option value="SIC">SIC</option>
+                <option value="SUCOFA">SUCOFA</option>
+            </select>
+
+
+
+            <button id="inicio" class="positive ui button" style="margin-top:5%; margin-left:45%;">Comece aqui!</button>
+
+
+            <img id="bordao" class="ui centered huge rounded image" src="img/indicadores_1.jpg">
+
         </div>
-        
-        <div class="ui inverted bottom fixed borderless menu">
-  <div class="item">
-    GEGEST - Matheus Ryuki Medeiros Kaiya 2018&#9400; 
-  </div>
-</div>
-        
+
+
+
+
+    </div>
+
+    <div class="ui inverted bottom fixed borderless menu">
+        <div class="item">
+            GEGEST - Matheus Ryuki Medeiros Kaiya 2018&#9400;
+        </div>
+    </div>
+
     <script src="./scripts/JQuery.js"></script>
     <script src="./scripts/semantic-ui.js"></script>
-     <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
+
 </html>

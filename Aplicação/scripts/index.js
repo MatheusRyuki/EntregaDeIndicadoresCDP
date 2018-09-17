@@ -2,10 +2,9 @@ $('.ui.dropdown').dropdown();
 
 // Clique de ínicio
 
-$("#inicio").click(function(){
+$("#inicio").click(function() {
     localStorage.clear();
-    localStorage.mes = $( "#mes option:selected" ).text();
-    localStorage.area = $( "#area option:selected" ).text();
+    localStorage.mes = $("#mes option:selected").text();
+    localStorage.area = $("#area option:selected").text();
     window.location.href = "./views/indicadores.html";
 });
-
